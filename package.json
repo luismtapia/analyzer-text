@@ -1,0 +1,20 @@
+{
+  "name": "analyzer-text",
+  "version": "1.0.1",
+  "description": "Package util para analizar textos - version prueba",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "words",
+    "text",
+    "analyzer",
+    "analizador",
+    "texto",
+    "count",
+    "contador"
+  ],
+  "author": "Luis Manuel Tapia Bautista",
+  "license": "ISC"
+}

@@ -1,0 +1,11 @@
+hola 4
+Soy 3
+teñgo 5
+11 espacios' 8
+8 lineas 6
+7 palabras 8
+40 letras 6
+!"#$$%&
+Soy un parrafo uno
+
+y yo soy el parrafo dos
