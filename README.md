@@ -9,25 +9,25 @@ Ideal para proyectos educativos, clínicos o empresariales que requieren anális
 
 Este paquete permite analizar cadenas de texto y obtener los siguientes datos:
 
-- ** Contar palabras**  
+- **Contar palabras**  
   Total de palabras separadas por espacios.
 
-- ** Contar espacios**  
+- **Contar espacios**  
   Número de espacios en blanco.
 
-- ** Contar números**  
+- **Contar números**  
   Detecta y cuenta dígitos numéricos.
 
-- ** Contar saltos de línea**  
+- **Contar saltos de línea**  
   Identifica `\n` y contabiliza líneas.
 
-- ** Contar caracteres especiales**  
+- **Contar caracteres especiales**  
   Extrae símbolos como `@`, `#`, `%`, etc.
 
-- ** Contar letras**  
+- **Contar letras**  
   Total de caracteres alfabéticos (mayúsculas y minúsculas).
 
-- ** Contar carácter específico**  
+- **Contar carácter específico**  
   Permite buscar y contar cualquier carácter dado por el usuario.
 
 ---
