@@ -1,15 +1,42 @@
-# Analizador de textos
+# 📊 Analizador de Textos
 
-### Opciones
-1. Cuenta Palabras
-1. Cuenta espacios
-1. Cuenta Numeros
-1. Cuenta saltos de linea
-1. Cuenta Caracteres especiales
-1. Cuenta letras
-1. Cuenta caracter dado
+**Paquete modular en JavaScript para extraer métricas clave de cualquier texto.**  
+Ideal para proyectos educativos, clínicos o empresariales que requieren análisis sintáctico básico.
 
-### Usage
-`const words = require('./analyzer-text');`
+---
 
-`words.espacios() // `
+## ✨ Funcionalidades
+
+Este paquete permite analizar cadenas de texto y obtener los siguientes datos:
+
+- **🔤 Contar palabras**  
+  Total de palabras separadas por espacios.
+
+- **␣ Contar espacios**  
+  Número de espacios en blanco.
+
+- **🔢 Contar números**  
+  Detecta y cuenta dígitos numéricos.
+
+- **↩️ Contar saltos de línea**  
+  Identifica `\n` y contabiliza líneas.
+
+- **🔣 Contar caracteres especiales**  
+  Extrae símbolos como `@`, `#`, `%`, etc.
+
+- **🅰️ Contar letras**  
+  Total de caracteres alfabéticos (mayúsculas y minúsculas).
+
+- **🔍 Contar carácter específico**  
+  Permite buscar y contar cualquier carácter dado por el usuario.
+
+---
+
+## 🚀 Instalación
+
+```bash
+npm install analyzer-text
+```
+
+📘 Licencia
+MIT — libre para uso personal y comercial.
