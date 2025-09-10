@@ -1,8 +1,12 @@
 {
   "name": "analyzer-text",
-  "version": "1.0.1",
-  "description": "Package util para analizar textos - version prueba",
-  "main": "index.js",
+  "version": "2.0.0",
+  "description": "Utilidades funcionales para analizar textos: espacios, líneas, palabras, letras, números, párrafos y más.",
+  "main": "analyzer-text.js",
+  "bugs": {
+    "url": "https://github.com/luismtapia/analyzer-text/issues"
+  },
+  "homepage": "https://github.com/luismtapia/analyzer-text#readme",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,5 +20,9 @@
     "contador"
   ],
   "author": "Luis Manuel Tapia Bautista",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/luismtapia/analyzer-text.git"
+  },
   "license": "ISC"
 }
