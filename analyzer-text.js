@@ -1,63 +1,30 @@
-const fs = require('fs')
-const path = require('path')
+const espacios = (texto = '') => (texto.match(/ /g) || []).length;
 
-const filepath = path.join(__dirname, 'input.txt');
-const read = fs.readFileSync(filepath, 'utf-8');
+const lineas = (texto = '') => texto.split(/\r\n|\r|\n/).length;
 
+const palabras = (texto = '') => (texto.match(/\b\w+\b/g) || []).length;
 
-// REGEX
-const lineas = () => {
-    return read.match(/[\n]/g).length + 1;
-}
+const letras = (texto = '') => (texto.match(/[a-zA-ZáéíóúüñÁÉÍÓÚÜÑ]/g) || []).length;
 
-const espacios = () => {
-    return read.match(/[ ]/g).length;
-}
+const numeros = (texto = '') => (texto.match(/\d/g) || []).length;
 
-const letras = () => {
-    return read.match(/[a-zñ]/ig).length;
-}
+const parrafos = (texto = '') => texto.split(/\n\s*\n/).length;
 
-const numeros = () => {
-    return read.match(/\d/g).length;
-}
+const caracteresEspeciales = (texto = '') => (texto.match(/[^\w\s]/g) || []).length;
 
-const palabras = () => {
-    // Eliminamos numeros y caracteres especiales
-    const texto = read.replace(/([^\wñ]|\d)/ig, ' ').trim();
-    return texto.split(/\s+/).length;
-    // metodo 2
-    // return read.match(/\S*[a-zñ]/ig);
-}
+const totalCaracter = (texto = '', caracter = '') => {
+  if (!caracter) return 0;
+  const regex = new RegExp(caracter, 'g');
+  return (texto.match(regex) || []).length;
+};
 
-const caracteresEspeciales = () => {
-    const espacios = read.replace(/[\s|\d]/g, '');
-    return espacios.match(/[^a-zñ]/ig).length;
-}
-
-const parrafos = () => {
-
-    //console.log('cuando haya dos \\n seguidos');
-    //return read.match(/[\n]/g).length + 1;
-
-    return 'parrafos not supported yet'
-}
-
-const totalCaracter = (caracter) => {
-    if (caracter.length > 1)
-        return 'El parametro indicado no es un caracter';
-    const miExpresion = `[${caracter}]`;
-    const regex = new RegExp(miExpresion, "g");
-
-    return read.match(regex).length;
-}
-
-exports.lineas = lineas;
-exports.espacios = espacios;
-exports.letras = letras;
-exports.numeros = numeros;
-exports.palabras = palabras;
-exports.parrafos = parrafos;
-exports.caracteresEspeciales = caracteresEspeciales;
-exports.totalCaracter = totalCaracter;
-
+module.exports = {
+  espacios,
+  lineas,
+  palabras,
+  letras,
+  numeros,
+  parrafos,
+  caracteresEspeciales,
+  totalCaracter
+};
